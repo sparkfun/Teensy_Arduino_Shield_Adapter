@@ -137,6 +137,7 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S" xrefpart="/%S.%C%R">
 <libraries>
@@ -16811,6 +16812,180 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </deviceset>
 </devicesets>
 </library>
+<library name="Testing">
+<packages>
+<package name="TEENSY-3.1">
+<wire x1="0" y1="0" x2="0" y2="35.56" width="0.127" layer="51"/>
+<wire x1="0" y1="35.56" x2="17.78" y2="35.56" width="0.127" layer="51"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="0" width="0.127" layer="51"/>
+<wire x1="17.78" y1="0" x2="12.7" y2="0" width="0.127" layer="51"/>
+<pad name="13" x="1.27" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="14" x="1.27" y="31.75" drill="1.016" diameter="1.8796"/>
+<pad name="15" x="1.27" y="29.21" drill="1.016" diameter="1.8796"/>
+<pad name="16" x="1.27" y="26.67" drill="1.016" diameter="1.8796"/>
+<pad name="17" x="1.27" y="24.13" drill="1.016" diameter="1.8796"/>
+<pad name="18" x="1.27" y="21.59" drill="1.016" diameter="1.8796"/>
+<pad name="19" x="1.27" y="19.05" drill="1.016" diameter="1.8796"/>
+<pad name="20" x="1.27" y="16.51" drill="1.016" diameter="1.8796"/>
+<pad name="21" x="1.27" y="13.97" drill="1.016" diameter="1.8796"/>
+<pad name="22" x="1.27" y="11.43" drill="1.016" diameter="1.8796"/>
+<pad name="23" x="1.27" y="8.89" drill="1.016" diameter="1.8796"/>
+<pad name="3V" x="1.27" y="6.35" drill="1.016" diameter="1.8796"/>
+<pad name="AGND" x="1.27" y="3.81" drill="1.016" diameter="1.8796"/>
+<pad name="VIN" x="1.27" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="12" x="16.51" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="11" x="16.51" y="31.75" drill="1.016" diameter="1.8796"/>
+<pad name="10" x="16.51" y="29.21" drill="1.016" diameter="1.8796"/>
+<pad name="9" x="16.51" y="26.67" drill="1.016" diameter="1.8796"/>
+<pad name="8" x="16.51" y="24.13" drill="1.016" diameter="1.8796"/>
+<pad name="7" x="16.51" y="21.59" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="16.51" y="19.05" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="16.51" y="16.51" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="16.51" y="13.97" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="16.51" y="11.43" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="16.51" y="8.89" drill="1.016" diameter="1.8796"/>
+<pad name="1" x="16.51" y="6.35" drill="1.016" diameter="1.8796"/>
+<pad name="0" x="16.51" y="3.81" drill="1.016" diameter="1.8796"/>
+<pad name="GND1" x="16.51" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="A14/DAC" x="3.81" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="PROG" x="6.35" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="GND" x="8.89" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="3.3V" x="11.43" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="VBAT" x="13.97" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="A11" x="3.81" y="13.97" drill="1.016" diameter="1.8796"/>
+<pad name="A10" x="3.81" y="11.43" drill="1.016" diameter="1.8796"/>
+<pad name="AREF" x="3.81" y="8.89" drill="1.016" diameter="1.8796"/>
+<pad name="VUSB" x="3.81" y="3.81" drill="1.016" diameter="1.8796"/>
+<text x="5.08" y="36.83" size="1.27" layer="25">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="12.7" y1="0" x2="5.08" y2="0" width="0.127" layer="51"/>
+<wire x1="5.08" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-1.27" x2="12.7" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="0" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="35.56" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="35.56" width="0.127" layer="22"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="0" width="0.127" layer="22"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="35.56" x2="17.78" y2="35.56" width="0.127" layer="22"/>
+<wire x1="0" y1="35.56" x2="17.78" y2="35.56" width="0.127" layer="21"/>
+<wire x1="17.78" y1="0" x2="12.7" y2="0" width="0.127" layer="21"/>
+<wire x1="12.7" y1="0" x2="5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="5.08" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="22"/>
+<wire x1="12.7" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="0" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="0" width="0.127" layer="22"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="0" width="0.127" layer="22"/>
+<wire x1="17.78" y1="0" x2="12.7" y2="0" width="0.127" layer="22"/>
+<wire x1="12.7" y1="0" x2="5.08" y2="0" width="0.127" layer="22"/>
+<wire x1="5.08" y1="0" x2="0" y2="0" width="0.127" layer="22"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TEENSY-31">
+<wire x1="0" y1="0" x2="0" y2="63.5" width="0.254" layer="94"/>
+<wire x1="0" y1="63.5" x2="27.94" y2="63.5" width="0.254" layer="94"/>
+<wire x1="27.94" y1="63.5" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="10.16" y="66.04" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="10.16" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND1" x="-5.08" y="2.54" length="middle"/>
+<pin name="GND" x="-5.08" y="5.08" length="middle"/>
+<pin name="VBAT" x="-5.08" y="17.78" length="middle"/>
+<pin name="3.3V" x="-5.08" y="20.32" length="middle"/>
+<pin name="3V" x="-5.08" y="22.86" length="middle"/>
+<pin name="VIN" x="-5.08" y="25.4" length="middle"/>
+<pin name="AGND" x="-5.08" y="7.62" length="middle"/>
+<pin name="A0/14" x="-5.08" y="60.96" length="middle"/>
+<pin name="A1/15" x="-5.08" y="58.42" length="middle"/>
+<pin name="A2/16" x="-5.08" y="55.88" length="middle"/>
+<pin name="A3/17" x="-5.08" y="53.34" length="middle"/>
+<pin name="A4/18/SDA0" x="-5.08" y="50.8" length="middle"/>
+<pin name="A5/19/SCL0" x="-5.08" y="48.26" length="middle"/>
+<pin name="A6/20*" x="-5.08" y="45.72" length="middle"/>
+<pin name="A7/21*" x="-5.08" y="43.18" length="middle"/>
+<pin name="A8/22*" x="-5.08" y="40.64" length="middle"/>
+<pin name="A9/23*" x="-5.08" y="38.1" length="middle"/>
+<pin name="10*/TX2/CS" x="33.02" y="2.54" length="middle" rot="R180"/>
+<pin name="11/DOUT" x="33.02" y="5.08" length="middle" rot="R180"/>
+<pin name="12/DIN" x="33.02" y="7.62" length="middle" rot="R180"/>
+<pin name="13/SCK" x="33.02" y="10.16" length="middle" rot="R180"/>
+<pin name="A10" x="-5.08" y="35.56" length="middle"/>
+<pin name="A11" x="-5.08" y="33.02" length="middle"/>
+<pin name="A14/DAC" x="-5.08" y="30.48" length="middle"/>
+<pin name="AREF" x="-5.08" y="12.7" length="middle"/>
+<pin name="VUSB" x="-5.08" y="15.24" length="middle"/>
+<pin name="8/TX3" x="33.02" y="25.4" length="middle" rot="R180"/>
+<pin name="7/RX3" x="33.02" y="27.94" length="middle" rot="R180"/>
+<pin name="6*" x="33.02" y="30.48" length="middle" rot="R180"/>
+<pin name="5*" x="33.02" y="33.02" length="middle" rot="R180"/>
+<pin name="4*" x="33.02" y="35.56" length="middle" rot="R180"/>
+<pin name="3*" x="33.02" y="38.1" length="middle" rot="R180"/>
+<pin name="2" x="33.02" y="40.64" length="middle" rot="R180"/>
+<pin name="1/TX1" x="33.02" y="43.18" length="middle" rot="R180"/>
+<pin name="0/RX1" x="33.02" y="45.72" length="middle" rot="R180"/>
+<pin name="9*/RX2" x="33.02" y="22.86" length="middle" rot="R180"/>
+<pin name="PROG" x="33.02" y="55.88" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TEENSY-3.1" prefix="U">
+<gates>
+<gate name="G$1" symbol="TEENSY-31" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TEENSY-3.1">
+<connects>
+<connect gate="G$1" pin="0/RX1" pad="0"/>
+<connect gate="G$1" pin="1/TX1" pad="1"/>
+<connect gate="G$1" pin="10*/TX2/CS" pad="10"/>
+<connect gate="G$1" pin="11/DOUT" pad="11"/>
+<connect gate="G$1" pin="12/DIN" pad="12"/>
+<connect gate="G$1" pin="13/SCK" pad="13"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3*" pad="3"/>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="3V" pad="3V"/>
+<connect gate="G$1" pin="4*" pad="4"/>
+<connect gate="G$1" pin="5*" pad="5"/>
+<connect gate="G$1" pin="6*" pad="6"/>
+<connect gate="G$1" pin="7/RX3" pad="7"/>
+<connect gate="G$1" pin="8/TX3" pad="8"/>
+<connect gate="G$1" pin="9*/RX2" pad="9"/>
+<connect gate="G$1" pin="A0/14" pad="14"/>
+<connect gate="G$1" pin="A1/15" pad="15"/>
+<connect gate="G$1" pin="A10" pad="A10"/>
+<connect gate="G$1" pin="A11" pad="A11"/>
+<connect gate="G$1" pin="A14/DAC" pad="A14/DAC"/>
+<connect gate="G$1" pin="A2/16" pad="16"/>
+<connect gate="G$1" pin="A3/17" pad="17"/>
+<connect gate="G$1" pin="A4/18/SDA0" pad="18"/>
+<connect gate="G$1" pin="A5/19/SCL0" pad="19"/>
+<connect gate="G$1" pin="A6/20*" pad="20"/>
+<connect gate="G$1" pin="A7/21*" pad="21"/>
+<connect gate="G$1" pin="A8/22*" pad="22"/>
+<connect gate="G$1" pin="A9/23*" pad="23"/>
+<connect gate="G$1" pin="AGND" pad="AGND"/>
+<connect gate="G$1" pin="AREF" pad="AREF"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="PROG" pad="PROG"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+<connect gate="G$1" pin="VUSB" pad="VUSB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SF_ID" value="DEV-12646" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16830,6 +17005,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
 <part name="J1" library="SparkFun-Boards" deviceset="ARDUINO_R3_SHIELD" device=""/>
 <part name="J2" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="PTH"/>
+<part name="U1" library="Testing" deviceset="TEENSY-3.1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16844,6 +17020,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="LOGO2" gate="G$1" x="175.26" y="45.72"/>
 <instance part="J1" gate="G$1" x="88.9" y="109.22"/>
 <instance part="J2" gate="G$1" x="127" y="66.04"/>
+<instance part="U1" gate="G$1" x="154.94" y="88.9"/>
 </instances>
 <busses>
 </busses>
