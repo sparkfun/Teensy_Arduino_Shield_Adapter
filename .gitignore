@@ -57,7 +57,8 @@ local.properties
 # Ignore the board and schematic backup files
 *.b#?
 *.s#?
-
+*.j#?
+*.p#?
 
 #################
 ## Visual Studio
