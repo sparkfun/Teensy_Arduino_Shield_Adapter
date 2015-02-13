@@ -11035,12 +11035,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="80.38" y="46.92"/>
 </polygon>
 </package>
-<package name="FIDUCIAL-1X2">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="MICRO-FIDUCIAL">
-<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
-</package>
 <package name="OSHW-LOGO-S">
 <polygon width="0.15" layer="21">
 <vertex x="0.3947" y="-0.9528" curve="9.498218"/>
@@ -12259,11 +12253,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="40.56" y="23.12"/>
 <vertex x="40.16" y="23.55"/>
 </polygon>
-</symbol>
-<symbol name="FIDUCIAL">
-<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 <symbol name="OSHW-LOGO">
 <rectangle x1="-9.5059" y1="-9.0106" x2="-9.4043" y2="-8.9979" layer="94"/>
@@ -15907,25 +15896,6 @@ logo. Default layer for the logo on the board is tSilk.</description>
 </technologies>
 </device>
 <device name="1_INCH" package="SFE_LOGO_NAME_FLAME_1">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FIDUCIAL" prefix="FID">
-<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
-Various fiducial points for machine vision alignment.</description>
-<gates>
-<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="1X2" package="FIDUCIAL-1X2">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="UFIDUCIAL" package="MICRO-FIDUCIAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -21924,8 +21894,6 @@ Spark Fun Electronics SKU : COM-00107</description>
 <attribute name="DESIGNER" value="Toni Klopfenstein"/>
 </part>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
-<part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
-<part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
 <part name="JP10" library="Testing" deviceset="ARDUINO_R3_SHIELD" device="UNO_R3_SHIELD_HOLES"/>
 <part name="JP9" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="PTH"/>
@@ -21997,16 +21965,16 @@ A6/A7 for Leonardo-compatible shields.</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
 <instance part="LOGO1" gate="G$1" x="190.5" y="35.56"/>
-<instance part="FID1" gate="G$1" x="241.3" y="25.4"/>
-<instance part="FID2" gate="G$1" x="246.38" y="25.4"/>
 <instance part="LOGO2" gate="G$1" x="175.26" y="45.72"/>
-<instance part="JP10" gate="G$1" x="76.2" y="96.52"/>
+<instance part="JP10" gate="G$1" x="76.2" y="96.52" smashed="yes">
+<attribute name="NAME" x="66.548" y="117.602" size="1.778" layer="95"/>
+</instance>
 <instance part="JP9" gate="G$1" x="43.18" y="27.94" smashed="yes">
 <attribute name="NAME" x="38.862" y="33.782" size="1.778" layer="95"/>
 </instance>
 <instance part="JP11" gate="G$1" x="198.12" y="104.14"/>
 <instance part="GND1" gate="1" x="55.88" y="68.58"/>
-<instance part="GND2" gate="1" x="167.64" y="68.58"/>
+<instance part="GND2" gate="1" x="170.18" y="68.58"/>
 <instance part="GND3" gate="1" x="58.42" y="15.24"/>
 <instance part="SJ1" gate="G$1" x="30.48" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.94" y="103.759" size="1.778" layer="95" rot="R180"/>
@@ -22022,7 +21990,7 @@ A6/A7 for Leonardo-compatible shields.</text>
 <attribute name="NAME" x="7.62" y="176.022" size="1.778" layer="95"/>
 </instance>
 <instance part="GND6" gate="1" x="20.32" y="165.1"/>
-<instance part="GND7" gate="1" x="81.28" y="137.16"/>
+<instance part="GND7" gate="1" x="68.58" y="137.16"/>
 <instance part="C1" gate="G$1" x="50.8" y="149.86"/>
 <instance part="GND8" gate="1" x="50.8" y="137.16"/>
 <instance part="JP6" gate="G$1" x="91.44" y="30.48" smashed="yes">
@@ -22041,7 +22009,7 @@ A6/A7 for Leonardo-compatible shields.</text>
 </instance>
 <instance part="GND10" gate="1" x="129.54" y="17.78"/>
 <instance part="S1" gate="1" x="213.36" y="177.8"/>
-<instance part="U1" gate="G$1" x="81.28" y="154.94"/>
+<instance part="U1" gate="G$1" x="68.58" y="154.94"/>
 <instance part="C2" gate="G$1" x="220.98" y="167.64"/>
 </instances>
 <busses>
@@ -22050,13 +22018,13 @@ A6/A7 for Leonardo-compatible shields.</text>
 <net name="SCL" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="A5/19/SCL0"/>
-<wire x1="215.9" y1="124.46" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
-<label x="223.52" y="124.46" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+<label x="220.98" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP10" gate="G$1" pin="SCL"/>
-<wire x1="88.9" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
-<label x="96.52" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
+<label x="93.98" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SJ2" gate="G$1" pin="3"/>
@@ -22068,13 +22036,13 @@ A6/A7 for Leonardo-compatible shields.</text>
 <net name="SDA" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="SDA"/>
-<wire x1="88.9" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
-<label x="96.52" y="76.2" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
+<label x="93.98" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="A4/18/SDA0"/>
-<wire x1="215.9" y1="127" x2="223.52" y2="127" width="0.1524" layer="91"/>
-<label x="223.52" y="127" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="127" x2="220.98" y2="127" width="0.1524" layer="91"/>
+<label x="220.98" y="127" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SJ1" gate="G$1" pin="3"/>
@@ -22091,8 +22059,8 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="3.3V"/>
-<wire x1="177.8" y1="91.44" x2="167.64" y2="91.44" width="0.1524" layer="91"/>
-<label x="167.64" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
+<label x="170.18" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
@@ -22122,17 +22090,17 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="GND"/>
-<wire x1="177.8" y1="76.2" x2="167.64" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="76.2" x2="167.64" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="76.2" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="76.2" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="JP11" gate="G$1" pin="GND1"/>
-<wire x1="167.64" y1="73.66" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="73.66" x2="167.64" y2="73.66" width="0.1524" layer="91"/>
-<junction x="167.64" y="73.66"/>
+<wire x1="170.18" y1="73.66" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="73.66" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
+<junction x="170.18" y="73.66"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="JP11" gate="G$1" pin="AGND"/>
-<wire x1="177.8" y1="78.74" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="78.74" x2="167.64" y2="76.2" width="0.1524" layer="91"/>
-<junction x="167.64" y="76.2"/>
+<wire x1="177.8" y1="78.74" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="78.74" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
+<junction x="170.18" y="76.2"/>
 </segment>
 <segment>
 <pinref part="JP9" gate="G$1" pin="6"/>
@@ -22190,34 +22158,32 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="81.28" y1="144.78" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
-<wire x1="81.28" y1="142.24" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="147.32" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="147.32" x2="68.58" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="RX"/>
-<wire x1="88.9" y1="114.3" x2="96.52" y2="114.3" width="0.1524" layer="91"/>
-<label x="96.52" y="114.3" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="114.3" x2="93.98" y2="114.3" width="0.1524" layer="91"/>
+<label x="93.98" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="0/RX1"/>
-<wire x1="215.9" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
-<label x="223.52" y="116.84" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
+<label x="220.98" y="116.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TX" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="TX"/>
-<wire x1="88.9" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
-<label x="96.52" y="111.76" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
+<label x="93.98" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="1/TX1"/>
-<wire x1="215.9" y1="114.3" x2="223.52" y2="114.3" width="0.1524" layer="91"/>
-<label x="223.52" y="114.3" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
+<label x="220.98" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -22235,13 +22201,13 @@ A6/A7 for Leonardo-compatible shields.</text>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="11/DOUT"/>
-<wire x1="215.9" y1="76.2" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
-<label x="223.52" y="76.2" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="76.2" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
+<label x="220.98" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP10" gate="G$1" pin="*D11"/>
-<wire x1="88.9" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
-<label x="96.52" y="83.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
+<label x="93.98" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP9" gate="G$1" pin="4"/>
@@ -22259,25 +22225,25 @@ A6/A7 for Leonardo-compatible shields.</text>
 <net name="A10" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="A10"/>
-<wire x1="177.8" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
-<label x="167.64" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
+<label x="170.18" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP7" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="17.78" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
-<label x="104.14" y="17.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="99.06" y1="17.78" x2="101.6" y2="17.78" width="0.1524" layer="91"/>
+<label x="101.6" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A11" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="A11"/>
-<wire x1="177.8" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
-<label x="167.64" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
+<label x="170.18" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP7" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
-<label x="104.14" y="20.32" size="1.27" layer="95" xref="yes"/>
+<wire x1="99.06" y1="20.32" x2="101.6" y2="20.32" width="0.1524" layer="91"/>
+<label x="101.6" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -22292,8 +22258,8 @@ A6/A7 for Leonardo-compatible shields.</text>
 <net name="SCK" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="D13"/>
-<wire x1="88.9" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
-<label x="96.52" y="78.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
+<label x="93.98" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP9" gate="G$1" pin="3"/>
@@ -22302,15 +22268,15 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="13/SCK"/>
-<wire x1="215.9" y1="81.28" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
-<label x="223.52" y="81.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="81.28" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
+<label x="220.98" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="D12"/>
-<wire x1="88.9" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
-<label x="96.52" y="81.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="81.28" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
+<label x="93.98" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP9" gate="G$1" pin="1"/>
@@ -22319,116 +22285,116 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="12/DIN"/>
-<wire x1="215.9" y1="78.74" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
-<label x="223.52" y="78.74" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="78.74" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
+<label x="220.98" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CS" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="*D10"/>
-<wire x1="88.9" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
-<label x="96.52" y="86.36" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
+<label x="93.98" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="10*/TX2/CS"/>
-<wire x1="215.9" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
-<label x="223.52" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
+<label x="220.98" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D2" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="D2"/>
-<wire x1="88.9" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
-<label x="96.52" y="106.68" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="106.68" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
+<label x="93.98" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="2"/>
-<wire x1="215.9" y1="111.76" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
-<label x="223.52" y="111.76" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
+<label x="220.98" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D3" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="*D3"/>
-<wire x1="88.9" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
-<label x="96.52" y="104.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="104.14" x2="93.98" y2="104.14" width="0.1524" layer="91"/>
+<label x="93.98" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="3*"/>
-<wire x1="215.9" y1="109.22" x2="223.52" y2="109.22" width="0.1524" layer="91"/>
-<label x="223.52" y="109.22" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
+<label x="220.98" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D4" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="D4"/>
-<wire x1="88.9" y1="101.6" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
-<label x="96.52" y="101.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
+<label x="93.98" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="4*"/>
-<wire x1="215.9" y1="106.68" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
-<label x="223.52" y="106.68" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="106.68" x2="220.98" y2="106.68" width="0.1524" layer="91"/>
+<label x="220.98" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D5" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="*D5"/>
-<wire x1="88.9" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
-<label x="96.52" y="99.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
+<label x="93.98" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="5*"/>
-<wire x1="215.9" y1="104.14" x2="223.52" y2="104.14" width="0.1524" layer="91"/>
-<label x="223.52" y="104.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="104.14" x2="220.98" y2="104.14" width="0.1524" layer="91"/>
+<label x="220.98" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D6" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="*D6"/>
-<wire x1="88.9" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
-<label x="96.52" y="96.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
+<label x="93.98" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="6*"/>
-<wire x1="215.9" y1="101.6" x2="223.52" y2="101.6" width="0.1524" layer="91"/>
-<label x="223.52" y="101.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="101.6" x2="220.98" y2="101.6" width="0.1524" layer="91"/>
+<label x="220.98" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D7" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="D7"/>
-<wire x1="88.9" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
-<label x="96.52" y="93.98" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
+<label x="93.98" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="7/RX3"/>
-<wire x1="215.9" y1="99.06" x2="223.52" y2="99.06" width="0.1524" layer="91"/>
-<label x="223.52" y="99.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="99.06" x2="220.98" y2="99.06" width="0.1524" layer="91"/>
+<label x="220.98" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D8" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="D8"/>
-<wire x1="88.9" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
-<label x="96.52" y="91.44" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
+<label x="93.98" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="8/TX3"/>
-<wire x1="215.9" y1="96.52" x2="223.52" y2="96.52" width="0.1524" layer="91"/>
-<label x="223.52" y="96.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="96.52" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
+<label x="220.98" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D9" class="0">
 <segment>
 <pinref part="JP10" gate="G$1" pin="*D9"/>
-<wire x1="88.9" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
-<label x="96.52" y="88.9" size="1.27" layer="95" xref="yes"/>
+<wire x1="88.9" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
+<label x="93.98" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="9*/RX2"/>
-<wire x1="215.9" y1="93.98" x2="223.52" y2="93.98" width="0.1524" layer="91"/>
-<label x="223.52" y="93.98" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="93.98" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
+<label x="220.98" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -22439,8 +22405,8 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="A0/14"/>
-<wire x1="177.8" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
-<label x="167.64" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="132.08" x2="170.18" y2="132.08" width="0.1524" layer="91"/>
+<label x="170.18" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -22451,8 +22417,8 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="A1/15"/>
-<wire x1="177.8" y1="129.54" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
-<label x="167.64" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="129.54" x2="170.18" y2="129.54" width="0.1524" layer="91"/>
+<label x="170.18" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -22463,8 +22429,8 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="A2/16"/>
-<wire x1="177.8" y1="127" x2="167.64" y2="127" width="0.1524" layer="91"/>
-<label x="167.64" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="127" x2="170.18" y2="127" width="0.1524" layer="91"/>
+<label x="170.18" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A3" class="0">
@@ -22475,15 +22441,15 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="A3/17"/>
-<wire x1="177.8" y1="124.46" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
-<label x="167.64" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="124.46" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
+<label x="170.18" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AREF" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="AREF"/>
-<wire x1="177.8" y1="83.82" x2="167.64" y2="83.82" width="0.1524" layer="91"/>
-<label x="167.64" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="83.82" x2="170.18" y2="83.82" width="0.1524" layer="91"/>
+<label x="170.18" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -22494,8 +22460,8 @@ A6/A7 for Leonardo-compatible shields.</text>
 <net name="RTC_BATT" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="VBAT"/>
-<wire x1="177.8" y1="88.9" x2="167.64" y2="88.9" width="0.1524" layer="91"/>
-<label x="167.64" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="88.9" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
+<label x="170.18" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="BAT1" gate="G$1" pin="-"/>
@@ -22508,18 +22474,23 @@ A6/A7 for Leonardo-compatible shields.</text>
 <segment>
 <pinref part="JP2" gate="G$1" pin="PWR"/>
 <wire x1="22.86" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="154.94" x2="73.66" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="154.94" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="50.8" y1="152.4" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
 <junction x="50.8" y="154.94"/>
 <pinref part="U1" gate="G$1" pin="IN"/>
 </segment>
+<segment>
+<pinref part="JP10" gate="G$1" pin="VIN"/>
+<wire x1="63.5" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
+<label x="55.88" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="VIN"/>
-<wire x1="177.8" y1="96.52" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
-<label x="167.64" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="96.52" x2="170.18" y2="96.52" width="0.1524" layer="91"/>
+<label x="170.18" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP10" gate="G$1" pin="5V"/>
@@ -22527,49 +22498,40 @@ A6/A7 for Leonardo-compatible shields.</text>
 <label x="55.88" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="96.52" y1="154.94" x2="99.06" y2="154.94" width="0.1524" layer="91"/>
-<label x="101.6" y="154.94" size="1.27" layer="95" xref="yes"/>
+<label x="81.28" y="154.94" size="1.27" layer="95" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="OUT"/>
-<wire x1="99.06" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="154.94" x2="96.52" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="JP10" gate="G$1" pin="VIN"/>
-<wire x1="63.5" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
-<label x="55.88" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="76.2" y1="154.94" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A8" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="A8/22*"/>
-<wire x1="177.8" y1="111.76" x2="167.64" y2="111.76" width="0.1524" layer="91"/>
-<label x="167.64" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
+<label x="170.18" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP6" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="33.02" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
-<label x="104.14" y="33.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="99.06" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
+<label x="101.6" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A9" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="A9/23*"/>
-<wire x1="177.8" y1="109.22" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
-<label x="167.64" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="109.22" x2="170.18" y2="109.22" width="0.1524" layer="91"/>
+<label x="170.18" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP6" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
-<label x="104.14" y="30.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="99.06" y1="30.48" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
+<label x="101.6" y="30.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="VUSB"/>
-<wire x1="177.8" y1="86.36" x2="167.64" y2="86.36" width="0.1524" layer="91"/>
-<label x="167.64" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="86.36" x2="170.18" y2="86.36" width="0.1524" layer="91"/>
+<label x="170.18" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="P"/>
@@ -22580,8 +22542,8 @@ A6/A7 for Leonardo-compatible shields.</text>
 <net name="PROG" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="PROG"/>
-<wire x1="215.9" y1="132.08" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
-<label x="223.52" y="132.08" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="132.08" x2="220.98" y2="132.08" width="0.1524" layer="91"/>
+<label x="220.98" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP8" gate="G$1" pin="3"/>
@@ -22598,8 +22560,8 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="A6/20*"/>
-<wire x1="177.8" y1="116.84" x2="167.64" y2="116.84" width="0.1524" layer="91"/>
-<label x="167.64" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="116.84" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
+<label x="170.18" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A7" class="0">
@@ -22611,8 +22573,8 @@ A6/A7 for Leonardo-compatible shields.</text>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="A7/21*"/>
-<wire x1="177.8" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
-<label x="167.64" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="114.3" x2="170.18" y2="114.3" width="0.1524" layer="91"/>
+<label x="170.18" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="HV_AREF" class="0">
@@ -22625,8 +22587,8 @@ A6/A7 for Leonardo-compatible shields.</text>
 <net name="A14/DAC" class="0">
 <segment>
 <pinref part="JP11" gate="G$1" pin="A14/DAC"/>
-<wire x1="177.8" y1="101.6" x2="167.64" y2="101.6" width="0.1524" layer="91"/>
-<label x="167.64" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="177.8" y1="101.6" x2="170.18" y2="101.6" width="0.1524" layer="91"/>
+<label x="170.18" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP8" gate="G$1" pin="2"/>
