@@ -22002,7 +22002,7 @@ A6/A7 for Leonardo-compatible shields.</text>
 <instance part="JP8" gate="G$1" x="165.1" y="172.72"/>
 <instance part="GND9" gate="1" x="175.26" y="160.02"/>
 <instance part="GND11" gate="1" x="220.98" y="157.48"/>
-<instance part="BAT1" gate="G$1" x="132.08" y="160.02" rot="R90"/>
+<instance part="BAT1" gate="G$1" x="132.08" y="160.02" rot="R270"/>
 <instance part="GND4" gate="1" x="132.08" y="147.32"/>
 <instance part="JP1" gate="G$1" x="119.38" y="25.4" smashed="yes">
 <attribute name="NAME" x="116.84" y="31.242" size="1.778" layer="95"/>
@@ -22141,11 +22141,6 @@ A6/A7 for Leonardo-compatible shields.</text>
 <wire x1="175.26" y1="170.18" x2="175.26" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="BAT1" gate="G$1" pin="+"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="132.08" y1="154.94" x2="132.08" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="127" y1="25.4" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="25.4" x2="129.54" y2="20.32" width="0.1524" layer="91"/>
@@ -22160,6 +22155,11 @@ A6/A7 for Leonardo-compatible shields.</text>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="68.58" y1="147.32" x2="68.58" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BAT1" gate="G$1" pin="-"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="132.08" y1="154.94" x2="132.08" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -22464,10 +22464,10 @@ A6/A7 for Leonardo-compatible shields.</text>
 <label x="170.18" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="BAT1" gate="G$1" pin="-"/>
-<wire x1="132.08" y1="165.1" x2="132.08" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="172.72" x2="127" y2="172.72" width="0.1524" layer="91"/>
 <label x="127" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="BAT1" gate="G$1" pin="+"/>
+<wire x1="132.08" y1="165.1" x2="132.08" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VRAW" class="0">
