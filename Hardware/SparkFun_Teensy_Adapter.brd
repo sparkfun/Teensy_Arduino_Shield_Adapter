@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -99,7 +99,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
@@ -179,17 +179,17 @@ Adapter</text>
 <text x="12.7" y="69.5325" size="0.8128" layer="21" font="vector" ratio="15">Real Time 
 Clock- 3V</text>
 <text x="33.3375" y="70.8025" size="1.016" layer="21" font="vector" ratio="15" rot="R90">ICSP</text>
-<wire x1="2.54" y1="19.05" x2="5.08" y2="16.51" width="0.254" layer="20"/>
-<wire x1="5.08" y1="16.51" x2="53.34" y2="16.51" width="0.254" layer="20"/>
-<wire x1="53.34" y1="16.51" x2="55.88" y2="19.05" width="0.254" layer="20"/>
-<wire x1="55.88" y1="19.05" x2="55.88" y2="73.66" width="0.254" layer="20"/>
-<wire x1="55.88" y1="73.66" x2="53.34" y2="73.66" width="0.254" layer="20"/>
-<wire x1="53.34" y1="73.66" x2="50.8" y2="76.2" width="0.254" layer="20"/>
-<wire x1="50.8" y1="76.2" x2="17.78" y2="76.2" width="0.254" layer="20"/>
-<wire x1="17.78" y1="76.2" x2="15.24" y2="73.66" width="0.254" layer="20"/>
-<wire x1="15.24" y1="73.66" x2="3.81" y2="73.66" width="0.254" layer="20"/>
-<wire x1="3.81" y1="73.66" x2="2.54" y2="72.39" width="0.254" layer="20"/>
-<wire x1="2.54" y1="72.39" x2="2.54" y2="19.05" width="0.254" layer="20"/>
+<wire x1="2.54" y1="19.05" x2="5.08" y2="16.51" width="0.2032" layer="20"/>
+<wire x1="5.08" y1="16.51" x2="53.34" y2="16.51" width="0.2032" layer="20"/>
+<wire x1="53.34" y1="16.51" x2="55.88" y2="19.05" width="0.2032" layer="20"/>
+<wire x1="55.88" y1="19.05" x2="55.88" y2="73.66" width="0.2032" layer="20"/>
+<wire x1="55.88" y1="73.66" x2="53.34" y2="73.66" width="0.2032" layer="20"/>
+<wire x1="53.34" y1="73.66" x2="50.8" y2="76.2" width="0.2032" layer="20"/>
+<wire x1="50.8" y1="76.2" x2="17.78" y2="76.2" width="0.2032" layer="20"/>
+<wire x1="17.78" y1="76.2" x2="15.24" y2="73.66" width="0.2032" layer="20"/>
+<wire x1="15.24" y1="73.66" x2="3.81" y2="73.66" width="0.2032" layer="20"/>
+<wire x1="3.81" y1="73.66" x2="2.54" y2="72.39" width="0.2032" layer="20"/>
+<wire x1="2.54" y1="72.39" x2="2.54" y2="19.05" width="0.2032" layer="20"/>
 <text x="34.29" y="32.0675" size="0.8128" layer="22" font="vector" ratio="15" rot="MR90" align="top-left">AREF</text>
 <text x="34.29" y="29.845" size="0.8128" layer="22" font="vector" ratio="15" rot="MR90" align="top-left">A8</text>
 <text x="34.29" y="26.9875" size="0.8128" layer="22" font="vector" ratio="15" rot="MR90" align="top-left">A11</text>
@@ -2017,8 +2017,8 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="" x="3.81" y="-10.16">
-<attribute name="VERSION" value="v01" x="41.5925" y="16.8275" size="1.778" layer="16" font="vector" ratio="15" rot="MR0"/>
-<attribute name="DESIGNER" value="Toni Klopfenstein" x="30.48" y="-10.16" size="1.778" layer="51"/>
+<attribute name="VERSION" value="v10" x="41.5925" y="16.8275" size="1.778" layer="16" font="vector" ratio="15" rot="MR0"/>
+<attribute name="DESIGNER" value="Toni Klopfenstein" x="34.29" y="-10.16" size="1.778" layer="51"/>
 </element>
 <element name="JP10" library="Testing" package="UNO_R3_SHIELD_HOLES" value="ARDUINO_R3_SHIELDUNO_R3_SHIELD_HOLES" x="2.54" y="16.51"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="23.8125" y="61.595"/>
