@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21762,7 +21762,7 @@ Spark Fun Electronics SKU : COM-00107</description>
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="_SMALL"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="POWER_JACK" device="PTH_LOCK"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-2"/>
+<part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-2" value="JST2"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="10UF-25V-20%(PTH)" device="" value="10uF"/>
@@ -21771,7 +21771,7 @@ Spark Fun Electronics SKU : COM-00107</description>
 <part name="JP7" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="JP8" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="BAT1" library="SparkFun-Electromechanical" deviceset="BATTERY" device="12PTH"/>
+<part name="BAT1" library="SparkFun-Electromechanical" deviceset="BATTERY" device="12PTH" value="CoinCell"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
